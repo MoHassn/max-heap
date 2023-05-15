@@ -28,7 +28,8 @@ class MaxHeap {
     const parentIndex = Math.floor(nodeIndex - 1 / 2);
     const node = this.heap[nodeIndex];
     const parent = this.heap[parentIndex];
-    if (parent && parent < node) {
+    console.log({parent, node})
+    if (parent !== undefined && parent < node) {
       this.swap(nodeIndex, parentIndex);
       this.heapifyUp(parentIndex);
     }
@@ -78,10 +79,11 @@ class MaxHeap {
   }
 }
 
-// const maxHeap = new MaxHeap();
+const maxHeap = new MaxHeap();
 
-// maxHeap.insert(1);
-// maxHeap.insert(5);
+maxHeap.insert(0);
+maxHeap.insert(6);
+console.log(maxHeap.heap)
 // maxHeap.insert(10);
 // maxHeap.insert(26);
 // maxHeap.insert(30);
@@ -125,34 +127,30 @@ class MaxHeap {
 // console.log(maxHeap.heap.length);
 
 
-const maxHeap = new MaxHeap([1, 40, 8, 9, 15, 7, 0, 0, 3, 3, 8, 41, 75, 26, 26]);
+// const maxHeap = new MaxHeap([1, 40, 8, 9, 15, 7, 0, 0, 3, 3, 8, 41, 75, 26, 26]);
 
-console.log(maxHeap.heap)
+// console.log(maxHeap.heap)
 
 
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
-console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
+// console.log(maxHeap.getMax());
 
 // console.log(maxHeap.heap)
 // console.log(maxHeap.heap)
 // console.log(maxHeap.heap)
 // console.log(maxHeap.heap)
 // console.log(maxHeap.heap)
-
-
-
-
